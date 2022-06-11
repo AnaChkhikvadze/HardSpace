@@ -5,12 +5,13 @@
     color: #fff;
 }
 
-.footer h3{
+.footer h3 {
     font-size: 20px;
     margin-left: 8px;
 }
 
-.footer .top, .bottom {
+.footer .top,
+.bottom {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -25,7 +26,8 @@
     cursor: pointer;
 }
 
-.footer .left, .right {
+.footer .left,
+.right {
     display: flex;
     align-items: center;
 }
@@ -38,7 +40,7 @@
     padding: 8px;
 }
 
-.footer .right{
+.footer .right {
     margin-right: 20px;
 }
 
@@ -48,6 +50,23 @@
     }
 }
 
-a:hover{
-    color: yellow;
+.footerLink:hover {
+    text-decoration: underline;
+}
+
+.youtube:hover {
+    color: #c4302b;
+}
+
+.twitter:hover {
+    color: #1DA1F2
+}
+
+.fb:hover {
+    color: #3b5998;
+}
+
+.insta:hover {
+    background: linear-gradient(#833AB4, #5851DB);
+    color: white;
 }
