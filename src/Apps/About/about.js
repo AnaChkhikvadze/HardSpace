@@ -6,11 +6,21 @@ import "./about.css"
 function Profile() {
     return (
         <div class="containerAbout">
-            <div className="leftAbout">
-                <h1>Who Are We?</h1>
+            <div className="aboutBackground" style={{ color: 'white' }}>
+                <h1 style={{ color: '#88bdbc' }}>Who Are We?</h1>
+                <br></br>
+                <h3>
+                    FOR the most wild, yet most homely narrative which I am about to pen,
+                    I neither expect nor solicit belief. Mad indeed would I be to expect it, in a case where my very senses reject their own evidence.
+                    Yet, mad am I not -- and very surely do I not dream. But to-morrow I die, and to-day I would unburthen my soul.
+                    My immediate purpose is to place before the world, plainly, succinctly, and without comment, a series of mere household events. In their consequences, these events have terrified -- have tortured -- have destroyed me. Yet I will not attempt to expound them. To me, they have presented little but Horror -- to many they will seem less terrible than barroques. Hereafter, perhaps, some intellect may be found which will reduce my phantasm to the common-place -- some intellect more calm, more logical, and far less excitable than my own, which will perceive, in the circumstances I detail with awe, nothing more than an ordinary succession of very natural causes and effects.
+                </h3>
+            </div>
+            <div className="leftAbout" style={{ color: '#254E58' }}>
+                <h1 className="aboutH1">Our Aims</h1>
                 <br>
                 </br>
-                <h3>
+                <h3 >
                     FOR the most wild, yet most homely narrative which I am about to pen,
                     I neither expect nor solicit belief. Mad indeed would I be to expect it, in a case where my very senses reject their own evidence.
                     Yet, mad am I not -- and very surely do I not dream. But to-morrow I die, and to-day I would unburthen my soul.
@@ -27,22 +37,6 @@ function Profile() {
                     when feeding and caressing them. This peculiarity of
                     character grew with my growth, and, in my manhood, I
                     derived from it one of my principal sources of pleasure
-                </h3>
-
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <h1>Our Aims</h1>
-                <br>
-                </br>
-                <h3>
-                    FOR the most wild, yet most homely narrative which I am about to pen,
-                    I neither expect nor solicit belief. Mad indeed would I be to expect it, in a case where my very senses reject their own evidence.
-                    Yet, mad am I not -- and very surely do I not dream. But to-morrow I die, and to-day I would unburthen my soul.
-                    My immediate purpose is to place before the world, plainly, succinctly, and without comment, a series of mere household events. In their consequences, these events have terrified -- have tortured -- have destroyed me. Yet I will not attempt to expound them. To me, they have presented little but Horror -- to many they will seem less terrible than barroques. Hereafter, perhaps, some intellect may be found which will reduce my phantasm to the common-place -- some intellect more calm, more logical, and far less excitable than my own, which will perceive, in the circumstances I detail with awe, nothing more than an ordinary succession of very natural causes and effects.
                 </h3>
                 <br></br>
                 <h3>
@@ -58,7 +52,7 @@ function Profile() {
                 </h3>
             </div>
             <div className="rightAbout">
-                <h1 className="headingProf">Our Team</h1>
+                {/* <h1 className="headingProf">Our Team</h1> */}
                 {Data.map((slide) => {
                     return (
                         <div className="aboutCard" >

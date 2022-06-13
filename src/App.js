@@ -8,8 +8,8 @@ import Blogs from "./Apps/Blogs/Blogs";
 import Slideshow from './components/Slideshow/Slidershow'
 import Footer from "./components/Footer/footer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
-import Contact from "./Apps/Contact/contact";
 import FAQ from "./Apps/FAQ/faq";
+import Contact from "./Apps/ContactUs/contact";
 
 function App() {
   return (
@@ -25,17 +25,15 @@ function App() {
               </>
             }
           />
+
+          <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/Destinations" element={<Destinations />} />
           <Route path="/Blogs" element={<Blogs />} />
-          {/* <Route path="/contact" element={<Contact/>} /> */}
           <Route path="/faq" element={<FAQ />} />
 
         </Routes>
         <Footer />
-
-
-
       </div>
     </Router>
   );
