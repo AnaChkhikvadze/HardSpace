@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import React from "react";
 import "./index.css";
 import Navbar from "./components/Navbar/Navbar"
@@ -7,8 +8,7 @@ import Destinations from "./Apps/Destinations/Destinations";
 import Blogs from "./Apps/Blogs/Blogs";
 import Slideshow from './components/Slideshow/Slidershow'
 import Footer from "./components/Footer/footer";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
-import FAQ from "./Apps/FAQ/faq";
+import FAQ from "./Apps/FAQ/faq"
 import Contact from "./Apps/ContactUs/contact";
 
 function App() {

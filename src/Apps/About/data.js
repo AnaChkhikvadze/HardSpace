@@ -1,21 +1,21 @@
 const Data = [
     {
-        fullName: 'Anna Chkhikvadze',
-        description: "fewf",
+        fullName: 'Jane Doe',
+        description: "Developer",
         imageurl: 'Lorem ipsum dolor sit amet'
     },
     {
-        fullName: 'Nini Tsertsvadze',
+        fullName: 'fwefwe',
         description: "ververv",
         imageurl: 'Lorem ipsum dolor sit amet'
     },
     {
-        fullName: 'Nika Gubeladze',
+        fullName: 'fwefe efwe',
         description: "faef",
         imageurl: 'Lorem ipsum dolor sit amet'
     },
     {
-        fullName: 'Erekle Lomtadze',
+        fullName: 'ewfew efw',
         description: "faef",
         imageurl: 'Lorem ipsum dolor sit amet'
     }

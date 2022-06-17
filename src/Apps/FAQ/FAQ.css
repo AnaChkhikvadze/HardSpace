@@ -50,14 +50,14 @@
     margin-right: 1.5rem;
 }
 
-.headerFAQ{
-    color:white;
+.headerFAQ {
+    color: white;
     padding: 5px;
 }
 
 @media screen and (max-width:1240px) {
-.FAQContainer{
-    width: auto;
-}
+    .FAQContainer {
+        width: auto;
+    }
 
 }

@@ -43,7 +43,7 @@
 
 .nav-menu a {
   font-size: 25px;
-  font-weight: 600;
+  font-weight: 500;
   color: white;
 }
 
@@ -69,22 +69,11 @@ h2 {
 
 .nav-signup:hover {
   box-shadow: rgb(0 0 0 / 15%) 0px 8px 24px;
-  color:yellow;
+  color: yellow;
 }
 
-.navlink{
-  padding-top: 50px;
-  padding-bottom: 26px;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-.navLink:hover{
-  color: #112d32 ;
-}
-
-.homeNav:hover{
-  color: #88bdbc;
+.navLink:hover {
+  color: #112d32;
 }
 
 @media screen and (max-width:1240px) {
@@ -108,7 +97,8 @@ h2 {
   }
 
   .nav-menu.active {
-    right: 0;
+    right: 0.01rem;
+    color: red;
   }
 
   .nav-menu li {
@@ -121,10 +111,7 @@ h2 {
     font-size: 1.2rem;
   }
 
-  .nav-signup{
-   margin-left: auto;
-  }  
+  .nav-signup {
+    margin-left: auto;
+  }
 }
-
-
-
