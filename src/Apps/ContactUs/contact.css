@@ -27,7 +27,6 @@
 
 .form-group {
   width: 100%;
-  margin-bottom: 2rem;
 }
 
 .contactUs {
@@ -45,7 +44,6 @@
   background-clip: text;
   -webkit-background-clip: text;
   padding-bottom: 5px;
-
 }
 
 .textUser {
@@ -57,7 +55,7 @@
   resize: vertical;
   border-radius: 5px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   opacity: 0.9;
   resize: vertical;
 }
@@ -118,4 +116,19 @@
   .contact-section {
     flex-direction: column;
   }
+}
+
+.map {
+  text-align: center;
+}
+
+.mapHeader {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  background-image: linear-gradient(to right, #10510b, #37f0ed);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  padding-bottom: 5px;
 }

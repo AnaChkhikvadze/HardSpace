@@ -5,49 +5,35 @@
     color: #fff;
 }
 
-.footer h3 {
-    font-size: 20px;
-    margin-left: 8px;
-}
-
 .footer .top,
 .bottom {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    align-items: center;
 }
 
-.footer .social {
+.social {
     display: flex;
     justify-content: space-between;
     width: 150px;
-    margin-right: 28px;
+    margin-right: 120px;
     cursor: pointer;
-}
-
-.footer .left,
-.right {
-    display: flex;
-    align-items: center;
 }
 
 .footer ul {
     display: flex;
 }
 
+.contactInfos {
+    margin-top: 20px;
+}
+
 .footer li {
     padding: 8px;
 }
 
-.footer .right {
-    margin-right: 20px;
-}
-
-@media screen and (max-width: 1140px) {
-    .footer ul {
-        flex-direction: column;
-    }
+.footer ul {
+    flex-direction: column;
 }
 
 .footerLink:hover {
@@ -69,4 +55,76 @@
 .insta:hover {
     background: linear-gradient(#833AB4, #5851DB);
     color: white;
+}
+
+.right {
+    flex-direction: column;
+}
+
+.contactFooter {
+    font-size: 25px;
+    padding: 10px;
+}
+
+.left {
+    padding-left: 10px;
+}
+
+.footerLogo {
+    padding-left: 15px;
+}
+
+@media screen and (max-width: 1140px) {
+    .social {
+        margin-right: 80px;
+    }
+
+    .bottom {
+        flex-direction: column;
+        padding: 30px;
+    }
+}
+
+.newsForm {
+    background: linear-gradient(#2589a280, #5851DB);
+    border-top-left-radius: 10px 140px;
+    border-top-right-radius: 79px 130px;
+    border-bottom-left-radius: 90px 19px;
+    border-bottom-right-radius: 120px 24px;
+    position: relative;
+    font-size: 17px;
+    line-height: 28px;
+    box-shadow: 3px 15px 10px -1px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 300px;
+}
+
+.center {
+    padding-right: 30px;
+}
+
+.news {
+    padding: 20px;
+}
+
+.newsInput {
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.subscribeSubmit {
+    background-color: #b97bba;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.subscribeSubmit:hover {
+    opacity: 0.8;
 }

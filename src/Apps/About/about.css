@@ -1,13 +1,14 @@
 .aboutCard {
-    background-color: #222831;
+    background-color: rgba(34, 40, 49, 0.9);
     min-height: 25rem;
-    width: 422px;
+    width: 400px;
     flex-direction: column;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.7);
     color: white;
     display: inline-block;
     padding-top: 20px;
+
 }
 
 .rightAbout {
@@ -18,7 +19,9 @@
     width: 100%;
     height: auto;
     flex-direction: column;
-    /* padding-left: 50px; */
+    box-shadow: 16px 16px #112d32;
+    padding-left: 50px;
+    padding-bottom: 5px;
 }
 
 .aboutImg {
@@ -40,6 +43,7 @@
 .desc {
     font-size: 18px;
     color: #88bdbc;
+    padding-bottom: 10px;
 }
 
 .sm {
@@ -72,7 +76,7 @@
 
 .leftAbout {
     width: 100%;
-    padding: 2rem;
+    padding: 50px;
     text-transform: none;
 }
 
@@ -84,7 +88,7 @@
     .rightAbout {
         display: flex;
         flex-direction: column;
-        left: 40%;
+        padding-left: 6%;
     }
 
     .aboutBackground {
@@ -94,8 +98,8 @@
 
 @media screen and (min-width: 1140px) {
     .aboutBackground {
-        padding-right: 500px;
-        padding-left: 40px;
+        padding-right: 850px;
+        padding-left: 50px;
         padding-top: 30px;
         padding-bottom: 30px;
     }

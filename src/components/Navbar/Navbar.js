@@ -1,12 +1,18 @@
 import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import './NavbarStyle.css'
-import {Link} from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 const Navbar = () => {
     const [click, setClick] = useState(false)
     const handleClick = () => setClick(!click)
 
+    const NavLinkStyles = ({ isActive }) => {
+        return {
+            color: isActive ? '#88bdbc' : 'white',
+            fontWeight: isActive ? '800' : '500',
+        }
+    }
 
     return (
         <div className='Navbar'>
@@ -17,22 +23,24 @@ const Navbar = () => {
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li>
                         <a>
-                    <Link to='/' className='homeNav'>Home</Link>
-                    </a>
+                            <NavLink exact to='/' style={NavLinkStyles} className='navLink'>Home</NavLink>
+                        </a>
                     </li>
                     <li>
-                    <a>
-                    <Link to='/destinations' className='navLink'>Destinations</Link>
-                    </a>
+                        <a>
+                            <NavLink exact to='/destinations' className='navLink' style={NavLinkStyles}>Destinations</NavLink>
+                        </a>
                     </li>
                     <li>
-                    <Link to='/blogs' className='navLink'>Blogs</Link>
+                        <NavLink exact to='/blogs' className='navLink' style={NavLinkStyles}>Blogs</NavLink>
                     </li>
                     <li>
-                        <Link to='/about' className='navLink'>About</Link>
+                        <NavLink exact to="/about" className='navLink' style={NavLinkStyles}>About</NavLink>
                     </li>
                     <li>
-                        <Link to='/contact' className='navLink'>Contact</Link>
+                        <NavLink exact to="/contact" style={NavLinkStyles}>
+                            Contact
+                        </NavLink>
                     </li>
                 </ul>
                 <button className='nav-signup'>Account</button>
