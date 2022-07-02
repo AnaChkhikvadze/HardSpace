@@ -1,7 +1,10 @@
 import React from 'react'
-
+import Cards from '../../components/profCards/Cards'
 export default function Destinations() {
   return (
-    <div>Destinations</div>
+    <>
+      <Cards />
+      <p></p>
+    </>
   )
 }

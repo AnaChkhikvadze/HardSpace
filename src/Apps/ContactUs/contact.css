@@ -12,11 +12,16 @@
 
 .contactSubmit {
   background-color: #254e58;
-  color: #88bdbc;
+  color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.contactSubmit:hover{
+  color: #88bdbc;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.07);
 }
 
 .contactBody {

@@ -51,26 +51,27 @@ function Profile() {
                     derived from it one of my principal sources of pleasure
                 </h3>
             </div>
-            <div className="rightAbout">
-                {/* <h1 className="headingProf">Our Team</h1> */}
+            <div className="profile-container">
                 {Data.map((slide) => {
                     return (
-                        <div className="aboutCard" >
-                            <img src={slide.image} className="aboutImg" alt=""></img>
-                            <div className="name">{slide.fullName}</div>
-                            <div className="desc">{slide.description}</div>
-                            <div>
-                                <a href="#faq" className='fb'><FaFacebook size={'1.5em'} /> </a>
-                                <a href="#faq" className='linkdIn'><FaLinkedin size={'1.5em'} /> </a>
-                                <a href="#faq" className='twitter'><FaTwitter size={'1.5em'} /></a>
-                                <a href="#faq" className='youtube'><FaYoutube size={'1.5em'} /></a>
+                        <div class="profile-container">
+                            <div class="profile-card">
+                                <img src={slide.imageurl} class="profile-icon" ></img>
+                                <div className="profile-name">{slide.fullName}</div>
+                                <div className="profile-description">{slide.description}</div>
+                                <div className="social-profile">
+                                    <a href="#faq" className='fb'><FaFacebook size={'1.5em'} /> </a>
+                                    <a href="#faq" className='linkdIn'><FaLinkedin size={'1.5em'} /> </a>
+                                    <a href="#faq" className='twitter'><FaTwitter size={'1.5em'} /></a>
+                                    <a href="#faq" className='youtube'><FaYoutube size={'1.5em'} /></a>
+                                </div>
+                                <a href="#" class="button-profile">Contact</a>
                             </div>
-                            <a href="#" class="contact-btn">Contact Me</a>
                         </div>
                     )
                 })}
             </div>
-        </div>)
+        </div >)
 }
 
 export default Profile;
